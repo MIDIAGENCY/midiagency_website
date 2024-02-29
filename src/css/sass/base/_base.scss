@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap&family=Anton:wght@100;200;300;400;500;600;700;800;900");
+:root {
+  --pink: #fc00ff;
+  --turquoise: #00dbde;
+  --yellow: #fbda61;
+  --purple: #c471ed;
+  --light-green: #edfff6;
+  --light-orange: #fff0e8;
+  --accent-color1: #ffffff;
+  --accent-color2: #272727;
+  --accent-color3: #cccccc;
+  --card-color: #000000;
+  --background: #111111;
+  --font-family: "Raleway", sans-serif;
+  --main-font: "Anton", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.app-container {
+  background-color: var(--background);
+  font-family: var(--font-family);
+  overflow-x: hidden;
+  transition: 0.5s ease-in-out;
+  padding: 2rem 4rem;
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 1080px) {
+  .app-container::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar {
+  background-color: #111111;
+  width: 0.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--pink);
+}

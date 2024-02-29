@@ -1,0 +1,155 @@
+.gift {
+  position: relative;
+  margin: 7.5rem 0;
+  .container {
+    display: flex;
+    background-color: var(--pink);
+    position: relative;
+    height: 30rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 4px 8px 0 var(--purple);
+    .background {
+      z-index: -1;
+      .ellipse {
+        position: absolute;
+        height: 100%;
+        width: 28rem;
+        border-radius: 100%;
+        filter: blur(100px);
+      }
+      .turquoise {
+        left: -15%;
+        background-color: var(--turquoise);
+      }
+      .yellow {
+        right: -15%;
+        background-color: var(--yellow);
+      }
+    }
+    .content {
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      padding-top: 3rem;
+      padding-left: 5rem;
+      font-size: 1.3rem;
+      align-items: flex-start;
+      .image {
+        img {
+          width: 5rem;
+        }
+      }
+      .title {
+        font-size: 2rem;
+        font-family: var(--main-font);
+        font-weight: 100;
+      }
+      .description {
+        padding-right: 50%;
+        letter-spacing: -1px;
+      }
+      button {
+        color: var(--accent-color1);
+        background-color: var(--background);
+        font-family: var(--main-font);
+        font-weight: 100;
+        letter-spacing: 0.1rem;
+        padding: 1rem 1.5rem;
+        border-radius: 2rem;
+        border: solid 1.5px var(--accent-color1);
+        box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0)
+          ),
+          linear-gradient(101deg, var(--turquoise), var(--pink));
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        box-shadow: 2px 1000px 1px var(--background) inset;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          box-shadow: none;
+          color: var(--accent-color2);
+          border: solid 1.5px var(--accent-color2);
+        }
+      }
+    }
+  }
+  .cards {
+    display: flex;
+    position: absolute;
+    top: -2rem;
+    right: 47.5%;
+    z-index: 1;
+    .card1 {
+      top: 0;
+      position: absolute;
+      transform: rotate(-10deg);
+      z-index: 3;
+      font-size: 0.8rem;
+      .card-image {
+        img {
+          height: 27.5rem;
+          width: 27.5rem;
+          border-radius: 15px;
+        }
+      }
+    }
+    .card2 {
+      top: 0;
+      z-index: 2;
+      position: absolute;
+      left: 10rem;
+      transform: rotate(5deg);
+      font-size: 0.7rem;
+
+      .card-image {
+        img {
+          height: 27.5rem;
+          width: 27.5rem;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    margin: 0;
+    .container {
+      padding: 1rem 2rem;
+      height: 100%;
+      .background {
+        .turquoise {
+          left: -70%;
+        }
+        .yellow {
+          right: -100%;
+        }
+      }
+      .content {
+        padding: 0;
+        font-size: 16px;
+        gap: 1rem;
+        padding-top: 2rem;
+        .title {
+          font-size: 22px;
+          padding-right: 1rem;
+          margin-bottom: 1rem;
+        }
+        .description {
+          padding-right: 10%;
+        }
+        button {
+          margin-top: 1rem;
+        }
+      }
+    }
+    .cards {
+      display: none;
+    }
+  }
+}
