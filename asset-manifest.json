@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/midiagency_website/static/css/main.e708a9e0.css",
+    "main.js": "/midiagency_website/static/js/main.32693bc1.js",
+    "static/media/crown.webp": "/midiagency_website/static/media/crown.26ff60e5c50a6d16f357.webp",
+    "static/media/medal.webp": "/midiagency_website/static/media/medal.c9ecebef14bf56a81664.webp",
+    "static/media/yuval.jpeg": "/midiagency_website/static/media/yuval.2ed1ae6e75a8911ca353.jpeg",
+    "static/media/mixer.png": "/midiagency_website/static/media/mixer.6380270726e0d14ea843.png",
+    "static/media/artclub.jpeg": "/midiagency_website/static/media/artclub.3a735b3b49f31694e20a.jpeg",
+    "static/media/letter.png": "/midiagency_website/static/media/letter.3a0164a769460156bd5b.png",
+    "index.html": "/midiagency_website/index.html",
+    "static/media/MIDI_LOGO.svg": "/midiagency_website/static/media/MIDI_LOGO.35570ea23344d03e8c556c7c7437379c.svg",
+    "main.e708a9e0.css.map": "/midiagency_website/static/css/main.e708a9e0.css.map",
+    "main.32693bc1.js.map": "/midiagency_website/static/js/main.32693bc1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e708a9e0.css",
+    "static/js/main.32693bc1.js"
+  ]
+}
